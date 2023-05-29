@@ -1,23 +1,18 @@
 /*  your css code here. If applicable */
-.container{
-	display:grid;
-	grid-template-rows: repeat(20,15px);
-	grid-template-columns: repeat(40,15px);
-    gap:3px;
-    justify-content: center;
-    align-content: center;
+div.container{
+	display:inline-flex;
+	flex-wrap:wrap;
+	padding:6px;
+	background-color:black;
 	
 }
-.square{
-background-color:rgb(29, 29, 29);
-transition: all 0.4s ease-out;
-transition-delay: 1s;
+div.square{
+	width:20px;
+	height:20px;
+	margin:2px;
+	background-color:rgb(29, 29, 29);
+	transition:background-color 4s ease-out 1ms;
 }
-
 .square:hover{
-    background-color: aqua;
-	transition:none;
-	transition-delay:0s;
-}
-    
+	background-color:orange;
 }
