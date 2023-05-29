@@ -1,18 +1,32 @@
-/*  your css code here. If applicable */
-div.container{
-	display:inline-flex;
-	flex-wrap:wrap;
-	padding:6px;
-	background-color:black;
-	
-}
-div.square{
-	width:20px;
-	height:20px;
-	margin:2px;
-	background-color:rgb(29, 29, 29);
-	transition:background-color 4s ease-out 1ms;
-}
-.square:hover{
-	background-color:orange;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  .square{
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 5s ease;
+  }
+  
+  .square:hover{
+    transition-duration: 0s;
+  }
